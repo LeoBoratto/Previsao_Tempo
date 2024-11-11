@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5E9BD6"
+    android:padding="16dp"
+    tools:layout_editor_absoluteX="13dp"
+    tools:layout_editor_absoluteY="334dp">
+
+    <!-- Botão para abrir o menu (no topo) -->
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3682CC"
+        android:drawableEnd="@drawable/menu"
+        android:padding="10dp"
+        android:text="Bem vindo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:icon="@drawable/menu"
+        android:drawablePadding="16dp"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="0dp"/>
+
+    <!-- LinearLayout para os outros botões -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonMenu"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Botão Previsão do Tempo -->
+        <!-- Espaçamento entre os botões -->
+
+        <!-- Botão Sobre o Criador -->
+        <Button
+            android:id="@+id/buttonWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#C8DFF5"
+            android:padding="10dp"
+            android:text="Previsão do Tempo"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#C8DFF5"
+            android:padding="10dp"
+            android:text="Sobre o Criador"
+            android:textColor="#000000"
+            android:textSize="16sp" /> <!-- Espaçamento entre os botões -->
+
+        <!-- Botão Tela em Branco -->
+        <Button
+            android:id="@+id/buttonBlank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C8DFF5"
+            android:padding="10dp"
+            android:text="Cidade que estou"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

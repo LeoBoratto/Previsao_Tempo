@@ -1,0 +1,17 @@
+<!-- res/menu/menu_main.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_info"
+        android:title="Previsão do tempo"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_info1"
+        android:title="Sobre o Criador"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_info2"
+        android:title="Cidade que estou"
+        android:showAsAction="ifRoom"/>
+</menu>

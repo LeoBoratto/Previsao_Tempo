@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#B3D0DA">
+
+
+
+    <!-- Container para a foto -->
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/foto"
+            android:contentDescription="Foto do usuário"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <!-- Nome do usuário -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leonardo Boratto"
+        android:textSize="22sp"
+        android:textColor="#1E88E5"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- RA do usuário -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RA: 09040718"
+        android:textSize="18sp"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Curso do usuário -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curso: Análise e Desenvolvimento de Sistemas"
+        android:textSize="18sp"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Linha decorativa -->
+    <View
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:background="#1E88E5"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Descrição -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo! Esta é a página de informações sobre o criador deste aplicativo."
+        android:textSize="16sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

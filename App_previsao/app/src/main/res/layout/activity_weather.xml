@@ -1,0 +1,206 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4682B4">
+
+    <!-- Barra Superior com o título e ícone do menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#3F51B5"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bem vindo"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:contentDescription="Menu"
+            android:src="@drawable/menu"
+             />
+    </LinearLayout>
+
+    <!-- Campo de Pesquisa para Localização -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D3D3D3"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/loc"
+            android:contentDescription="Localização"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o local"
+
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <!-- Visualização Principal do Clima -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#B0C4DE"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <!-- Ícone do Clima -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:contentDescription="Chuva"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Temperatura -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" °C"
+            android:textSize="48sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <!-- Informações Adicionais -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- Velocidade do Vento -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#D3D3D3"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/vento"
+                android:contentDescription="Vento"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vento"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" km/h"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Umidade -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#D3D3D3"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/gota"
+                android:contentDescription="Umidade"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umidade"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Chance de Chuva -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#D3D3D3"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/solnoite"
+                android:contentDescription="Chance de Chuva"/>
+
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="Chance de"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Abrir Câmera"
+        android:backgroundTint="#C8DFF5"
+        app:icon="@drawable/camera" />
+
+
+</LinearLayout>
